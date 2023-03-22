@@ -177,6 +177,9 @@ typedef struct { int16_t value; celsius_t celsius; } temp_entry_t;
 #if ANY_THERMISTOR_IS(110) // Pt100 with 1k0 pullup
   #include "thermistor_110.h"
 #endif
+#if ANY_THERMISTOR_IS(111) // Pt100 with 1k0 pullup
+  #include "thermistor_111.h"
+#endif
 #if ANY_THERMISTOR_IS(147) // Pt100 with 4k7 pullup
   #include "thermistor_147.h"
 #endif
